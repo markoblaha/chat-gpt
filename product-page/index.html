@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-container">
+        <h1 class="product-title">Náš skvelý produkt</h1>
+        <button id="details-button">Zobraziť možnosti</button>
+        <div id="options" class="options hidden">
+            <label for="variant">Variant:</label>
+            <select id="variant">
+                <option value="basic">Základný</option>
+                <option value="premium">Prémiový</option>
+                <option value="deluxe">Deluxe</option>
+            </select>
+            <label for="quantity">Počet ks:</label>
+            <input type="number" id="quantity" value="1" min="1">
+            <button id="order-button">Objednať</button>
+        </div>
+        <div id="confirmation" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
